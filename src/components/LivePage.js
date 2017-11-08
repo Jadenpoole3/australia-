@@ -38,6 +38,8 @@ class LivePage extends Component {
                {this.state.offers.map( offer => {
                     return (<Link key={offer._id} to={`/offer/${offer._id}`}><Offer>{offer.name}</Offer></Link>)
                })}
+
+    
             </div>
            
             )

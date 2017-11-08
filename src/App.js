@@ -7,9 +7,7 @@ import ComingPage from './components/ComingPage'
 import styled from 'styled-components'
 import NavBar from './components/NavBar'
 
-const Page = styled.div`
 
-`
 
 
 
@@ -18,9 +16,11 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Page>
+      
+         
       <NavBar/>
       <Router>
+        
       <Switch>
       <Route exact path="/" component={HomePage} />
       <Route exact path="/LivePage" component={LivePage} />
@@ -28,7 +28,7 @@ class App extends Component {
 
       </Switch>
       </Router>
-      </Page>
+      
       </div>
     );
   }
